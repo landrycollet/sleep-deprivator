@@ -65,7 +65,7 @@ https://learn.adafruit.com/pro-trinket-keyboard/library
 Refer to that guide if you don't know how to install a library:
 https://learn.adafruit.com/adafruit-all-about-arduino-libraries-install-use/arduino-libraries
 
-- Open the Arduino project in `ArduinoCode/sleepDeprivator.ino`. Build and send it to the Arduino Trinket Pro.
+- Open the Arduino project in `sleep-deprivator.ino`. Build and send it to the Arduino Trinket Pro.
 
 - Optional: you can connect a switch between ground and pin 4. Pulling that pin low will disable the virtual keybaord.
 
