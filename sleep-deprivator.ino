@@ -1,3 +1,19 @@
+// Sleep-deprivator, don't let your computer go to sleep, like, ever.
+
+// Copyright (C) 2020, by Landry COLLET.
+
+// Sleep-deprivator is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or any
+// later version.
+
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see https://www.gnu.org/licenses/.
 
 #include <ProTrinketKeyboard.h>
 
@@ -24,7 +40,8 @@ void loop() {
     if (nbMsElapsedKeyboard > msBetweenKeyboardInput)
     {
       // Here, a press on CONTROL is set to awake the computer, which is invisible in OS X.
-      // For an other OS, you might want to change to something less harmful (if you're typing Q at that moment that can be frustrating).
+      // For an other OS, you might want to change to something less harmful (if you're
+      // typing Q at that moment that can be frustrating).
       // Full list available in ProTrinketKeyboard.h.
       TrinketKeyboard.pressKey(0, KEYCODE_LEFT_CONTROL);
       TrinketKeyboard.pressKey(0, 0); // Release key press.
